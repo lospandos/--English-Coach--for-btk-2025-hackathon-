@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Dil Koçu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <div class="nav">
+    <h1>🧠 English Coach</h1>
+    <ul>
+
+      <li onclick="location.href='lessons.html'">🏠Home</li>
+      <li onclick="location.href='speak.html'">👨‍🏫AI Practice</li>
+      <li onclick="location.href='news.html'">📰News</li>
+      <li onclick="location.href='listen.html'">🎧Listening</li>
+      <li onclick="location.href='drag.html'">🎯Drag & Match</li>
+      <li onclick="location.href='hakk.html'">👩‍⚕️👨🏻‍💻About Us</li>
+    
+    </ul>
+  </div>
+  
+  <div id="chat-container">
+    <!-- Sol Chat Panel -->
+    <div id="chatBox"></div>
+
+    <!-- Sağ Panel (Konuşma Özeti ve Seviye Tespiti) -->
+    <div id="right-panel">
+      <div class="feedback-box">
+        <h3>📊 Seviye Tespiti</h3>
+        <p id="levelFeedback">Seviyenizi görmek için bir mesaj girin.</p>
+      </div>
+      <div class="feedback-box">
+        <h3>🧠 Konuşma Değerlendirmesi</h3>
+        <p id="speechFeedback">Konuşma değerlendirmesi burada gösterilecek.</p>
+      </div>
+      <div class="correction">
+      <h3>✍️ Düzeltme</h3>
+      <p id="correctionFeedback">Konuşma düzeltmesi burada gösterilecek.</p>
+      <div id="correctionBox"></div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Form Alanı (Mesaj Gönderme) -->
+  <form id="chatForm">
+    <input type="text" id="userInput" placeholder="Mesajınızı yazın..." required />
+    <button type="button" id="micBtn">🎤</button>
+    <button type="submit" id="sendBtn">Gönder</button>
+    <button type="button" id="detailedAnalysisBtn" >Detaylı Analiz Yap</button>
+    
+
+  </form>
+
+  <script src="utils/geminiApi.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

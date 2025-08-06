@@ -1,0 +1,119 @@
+/* Genel Sayfa Ayarları */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Arka plan siyah */
+  color: #f1f1f1; /* Metin rengi açık */
+  line-height: 1.6;
+}
+
+/* Navbar (Navigasyon) */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
+
+.nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav ul li:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+/* Section (Bölümler) */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 20px;
+  background-color: #252525;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex-wrap: wrap; /* Flex düzenini optimize etmek için */
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  width: 250px; /* Resim boyutlarını sınırla */
+  margin-right: 20px;
+}
+
+.section .content {
+  flex: 1;
+  padding: 20px;
+}
+
+.section h2 {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-size: 18px;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
+
+.section button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.section button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Tasarım (Mobil Uyumluluk) */
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .section .content {
+    padding: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul li {
+    padding: 10px;
+    margin: 5px 0;
+  }
+}

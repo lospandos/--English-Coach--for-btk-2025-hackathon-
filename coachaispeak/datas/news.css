@@ -1,0 +1,226 @@
+/* Genel Sayfa Ayarları */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+.news-content h2 {
+  border: 2px solid red;
+}
+.news-content h2,
+.news-content h3,
+.news-content h4,
+.news-content p,
+.news-content li {
+  color: #ddd;
+}
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
+
+.nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav ul li:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+/* Sayfa Düzeni: Haber içeriği ve çeviri kutusu yan yana */
+.page-layout {
+  display: flex;
+  gap: 30px;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Haber Metni */
+.news-content {
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: #1e1e1e;
+  color: #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Başlıklar */
+.news-content h2,
+.news-content h3,
+.news-content h4,
+.news-content p,
+.news-content li {
+  color: #ddd; /* açık gri/metin rengi */
+}
+
+/* Sadece tıklanabilir kelimeler span ile işaretli ve mavi */
+.news-content span {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Çeviri Kutusu */
+.translation-box {
+  background-color: #222;
+  color: #eee;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  max-height: 500px;
+  overflow-y: auto;
+}
+.news-content img {
+  width: 100%;      /* Genişlik habere göre tam olsun */
+  max-height: 300px; /* Yüksekliği sınırla, orantılı kalsın */
+  object-fit: cover; /* Kırpma ve büyütmeyi düzgün yapar */
+  border-radius: 8px; /* Köşeler hafif yuvarlak */
+  margin-bottom: 20px; /* Resim ile başlık arasında boşluk */
+  display: block; /* Gerekiyorsa alt satıra geçmesi için */
+}
+
+
+
+.news-content {
+  max-width: 700px;
+  margin: 20px auto;  /* Ortala sayfada */
+  background-color: #1e1e1e;
+  color: #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.news-content img.news-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-item {
+  display: flex;
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-items: center;
+}
+
+.news-item:hover {
+  background-color: #2a2a2a;
+}
+
+.news-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.news-content p {
+  margin: 0 0 10px;
+  color: #ccc;
+}
+
+.news-content button {
+  padding: 6px 12px;
+  background-color: #3a84ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.news-content button:hover {
+  background-color: #2563eb;
+}
+
+
+
+/* Çeviri Başlıkları */
+.translation-box h3,
+.translation-box h4 {
+  margin-top: 0;
+  color: #ff8c00;
+}
+
+/* Çeviri İçerik */
+#sentence-translation {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+#word-translation div {
+  margin-bottom: 6px;
+  font-size: 14px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 4px;
+}
+
+.news-content h2 {
+  color: white !important;
+  font-size: 24px;
+  margin-top: 20px;
+  display: block;
+}
+
+
+
+/* Responsive (mobilde alt alta) */
+@media screen and (max-width: 768px) {
+  .page-layout {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .news-content, .translation-box {
+    width: 100%;
+  }
+}

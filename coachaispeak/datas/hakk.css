@@ -1,0 +1,87 @@
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
+
+.nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav ul li:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+.about {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  line-height: 1.6;
+}
+
+.about h2 {
+  color: #00ccff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.footer-joke {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+
+#easterEggBtn {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #00ccff;
+  border: none;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#easterEgg {
+  margin-top: 20px;
+  background-color: #282828;
+  padding: 15px;
+  border-radius: 8px;
+  display: none;
+  color: #ffcc00;
+  font-style: italic;
+}
+
+#easterEgg.visible {
+  display: block;
+}

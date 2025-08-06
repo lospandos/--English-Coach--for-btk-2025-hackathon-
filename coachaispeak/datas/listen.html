@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Coach - Listening Practice</title>
+  <link rel="stylesheet" href="listen.css" />
+</head>
+<body>
+  <div class="nav">
+    <h1>🧠 English Coach</h1>
+    <ul>
+      <li onclick="location.href='lessons.html'">🏠Home</li>
+      <li onclick="location.href='speak.html'">👨‍🏫AI Practice</li>
+      <li onclick="location.href='news.html'">📰News</li>
+      <li onclick="location.href='listen.html'">🎧Listening</li>
+      <li onclick="location.href='drag.html'">🎯Drag & Match</li>
+      <li onclick="location.href='hakk.html'">👩‍⚕️👨🏻‍💻About Us</li>
+    </ul>
+  </div>
+
+  <main class="page-layout">
+    <h2>Listening Practice</h2>
+    <p>Listen carefully, use jokers wisely, and type what you hear.</p>
+
+    <div id="exercise-container">
+
+      <div class="exercise">
+        <div class="btn-row">
+          <button class="play-btn" data-index="0">▶️ Play Sentence 1</button>
+          <button class="play-slow-btn" data-index="0">🐢 Play Sentence Slow 1</button>
+          <button class="hint-btn" data-index="0">🃏 Use Joker</button>
+        </div>
+        <textarea class="answer-box" data-index="0" placeholder="Type what you hear..."></textarea>
+        <button class="check-btn" data-index="0">Check Answer</button>
+        <div class="hint" data-index="0" style="display:none;"></div>
+        <div class="feedback" data-index="0"></div>
+        <div class="score" data-index="0">Score: 3</div>
+      </div>
+
+      <div class="exercise">
+        <div class="btn-row">
+          <button class="play-btn" data-index="1">▶️ Play Sentence 2</button>
+          <button class="play-slow-btn" data-index="1">🐢 Play Sentence Slow 2</button>
+          <button class="hint-btn" data-index="1">🃏 Use Joker</button>
+        </div>
+        <textarea class="answer-box" data-index="1" placeholder="Type what you hear..."></textarea>
+        <button class="check-btn" data-index="1">Check Answer</button>
+        <div class="hint" data-index="1" style="display:none;"></div>
+        <div class="feedback" data-index="1"></div>
+        <div class="score" data-index="1">Score: 3</div>
+      </div>
+
+      <div class="exercise">
+        <div class="btn-row">
+          <button class="play-btn" data-index="2">▶️ Play Sentence 3</button>
+          <button class="play-slow-btn" data-index="2">🐢 Play Sentence Slow 3</button>
+          <button class="hint-btn" data-index="2">🃏 Use Joker</button>
+        </div>
+        <textarea class="answer-box" data-index="2" placeholder="Type what you hear..."></textarea>
+        <button class="check-btn" data-index="2">Check Answer</button>
+        <div class="hint" data-index="2" style="display:none;"></div>
+        <div class="feedback" data-index="2"></div>
+        <div class="score" data-index="2">Score: 3</div>
+      </div>
+
+    </div>
+
+
+    <div class="loading-container" id="loading">
+  <div class="spinner"></div>
+  <p>Loading more sounds...</p>
+</div>
+  </main>
+
+  <script src="listen.js"></script>
+</body>
+</html>

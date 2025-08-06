@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Coach - News</title>
+  <link rel="stylesheet" href="news.css" />
+</head>
+<body>
+  <div class="nav">
+    <h1>🧠 English Coach</h1>
+    <ul>
+
+      <li onclick="location.href='lessons.html'">🏠Home</li>
+      <li onclick="location.href='speak.html'">👨‍🏫AI Practice</li>
+      <li onclick="location.href='news.html'">📰News</li>
+      <li onclick="location.href='listen.html'">🎧Listening</li>
+      <li onclick="location.href='drag.html'">🎯Drag & Match</li>
+      <li onclick="location.href='hakk.html'">👩‍⚕️👨🏻‍💻About Us</li>
+    </ul>
+  </div>
+
+  <div class="banner">
+    <h2>🗞️ English Learning News</h2>
+    <p>Improve your vocabulary and comprehension by reading curated English news articles.</p>
+  </div>
+
+  <div class="news-list">
+    <div class="news-item" onclick="openArticle('haber1.html')">
+      <img src="assets/drone.jpeg" alt="News 1" />
+      <div class="news-content">
+        <h3>Türkiye’s defense sector emerges as key in Europe’s rearming</h3>
+        <p>From the war in Ukraine to uncertainty over</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="news-item" onclick="openArticle('haber2.html')">
+      <img src="assets/microsoft.jpg" alt="News 2" />
+      <div class="news-content">
+        <h3>Microsoft reports cyberattacks by Chinese state-backed groups</h3>
+        <p>Microsoft has released security updates to address these vulnerabilities and urged all users to apply the patches immediately.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="news-item" onclick="openArticle('haber3.html')">
+      <img src="assets/gemini.jpg" alt="News 3" />
+      <div class="news-content">
+        <h3>Google unveils next-generation AI model called Gemini 1.5</h3>
+        <p>This new generation also delivers a breakthrough in long-context understanding.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="loading-container" id="loading">
+  <div class="spinner"></div>
+  <p>Loading more news...</p>
+</div>
+
+  <script>
+    function openArticle(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

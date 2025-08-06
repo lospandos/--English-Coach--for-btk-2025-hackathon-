@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Coach - Drag & Match</title>
+  <link rel="stylesheet" href="drag.css" />
+</head>
+<body>
+  <div class="nav">
+    <h1>🧠 English Coach</h1>
+    <ul>
+       <li onclick="location.href='lessons.html'">🏠Home</li>
+      <li onclick="location.href='speak.html'">👨‍🏫AI Practice</li>
+      <li onclick="location.href='news.html'">📰News</li>
+      <li onclick="location.href='listen.html'">🎧Listening</li>
+      <li onclick="location.href='drag.html'">🎯Drag & Match</li>
+      <li onclick="location.href='hakk.html'">👩‍⚕️👨🏻‍💻About Us</li>
+    </ul>
+  </div>
+
+  <main class="page-layout">
+    <h2>🎯 Drag & Match</h2>
+    <p>Drag the English word or sentence and drop it to its correct Turkish meaning.</p>
+<div class="game-info">
+  <div id="scoreDisplay">Score: 0</div>
+  <div id="timerDisplay">Time Left: 120s</div>
+  <button id="newGameBtn">🔄 New Game</button>
+</div>
+
+
+
+    <div class="game-container">
+      <div class="draggables" id="draggables">
+        <!-- İngilizce kelimeler burada olacak -->
+      </div>
+      <div class="droppables" id="droppables">
+        <!-- Türkçe karşılıklar burada olacak -->
+      </div>
+    </div>
+
+    <div class="result" id="result"></div>
+  </main>
+
+  <script src="drag.js"></script>
+</body>
+</html>
